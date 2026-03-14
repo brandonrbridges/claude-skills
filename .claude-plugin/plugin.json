@@ -1,0 +1,11 @@
+{
+  "name": "bb",
+  "description": "Brandon's Claude Code skills: autonomous mode, smart commits, and cross-codebase investigation",
+  "version": "1.0.0",
+  "author": {
+    "name": "Brandon Bridges"
+  },
+  "repository": "https://github.com/brandonrbridges/claude-skills",
+  "license": "MIT",
+  "keywords": ["skills", "auto", "commit", "investigate", "debugging"]
+}

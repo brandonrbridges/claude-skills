@@ -13,6 +13,7 @@ description: Use when the user invokes /help or asks what bb commands are availa
 | `/bb:check` | Type-check, lint, build — report issues with fix options |
 | `/bb:pr` | Create a pull request from branch commits |
 | `/bb:diagnose` | Cross-codebase bug diagnosis with parallel agents |
+| `/bb:shad` | shadcn/ui best practices — Tailwind v4, OKLCH, composition |
 | `/bb:help` | This list |
 
 Repo: https://github.com/brandonrbridges/claude-skills

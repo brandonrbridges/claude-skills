@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2026-03-15
+
+### Added
+- `/bb:shad` — shadcn/ui best practices enforcer: Tailwind v4, OKLCH theming, React 19 patterns, composition rules
+
 ## [1.1.0] - 2026-03-15
 
 ### Changed

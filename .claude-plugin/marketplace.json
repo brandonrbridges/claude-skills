@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "bb",
-      "source": ".",
+      "source": "./plugins/bb",
       "description": "Developer workflow skills — autonomous mode, smart commits, preflight checks, PRs, and cross-codebase investigation",
       "version": "1.3.0",
       "author": {

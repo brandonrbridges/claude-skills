@@ -7,7 +7,7 @@
 Move fast. Commit clean. Diagnose properly.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
-[![Plugin Version](https://img.shields.io/badge/version-1.0.0-green.svg?style=flat-square)](.claude-plugin/plugin.json)
+[![Plugin Version](https://img.shields.io/badge/version-1.1.0-green.svg?style=flat-square)](.claude-plugin/plugin.json)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-plugin-8B5CF6.svg?style=flat-square)](https://github.com/anthropics/claude-code)
 
 </div>
@@ -30,10 +30,10 @@ All commands are prefixed with `bb:`. Run `/bb:help` for a quick reference.
 |:--------|:--------|
 | [`/bb:auto`](#bbauto) | Full autonomous mode — stop asking, start doing |
 | [`/bb:commit`](#bbcommit) | Conventional commits, agent-only files, rebase + push |
-| [`/bb:clean-tree`](#bbclean-tree) | Organise a messy tree into logical grouped commits |
-| [`/bb:preflight`](#bbpreflight) | Type-check, lint, build — report issues with fix options |
+| [`/bb:sweep`](#bbsweep) | Tidy a messy tree into logical grouped commits |
+| [`/bb:check`](#bbcheck) | Type-check, lint, build — report issues with fix options |
 | [`/bb:pr`](#bbpr) | Create a pull request from branch commits |
-| [`/bb:investigate`](#bbinvestigate) | Diagnose bugs across services and packages |
+| [`/bb:diagnose`](#bbdiagnose) | Cross-codebase bug diagnosis with parallel agents |
 
 ---
 
@@ -51,13 +51,13 @@ Commits only the files you changed this session using conventional commit format
 
 Rebases on remote and pushes. No AI attribution, no `Co-Authored-By`, no "as requested" — commits read like a human wrote them.
 
-### `/bb:clean-tree`
+### `/bb:sweep`
 
 For when your working tree is a mess — maybe multiple agents ran, maybe changes piled up. Reads every dirty file, groups them by intent into logical commits, orders them by dependency (shared packages first, then API, then frontend), and pushes.
 
 Matches your existing commit style from `git log`.
 
-### `/bb:preflight`
+### `/bb:check`
 
 Runs type-check, lint, and build in parallel. Reports every error and warning, then asks what you want to do:
 
@@ -71,7 +71,7 @@ Runs type-check, lint, and build in parallel. Reports every error and warning, t
 
 Generates a PR from your branch commits. Reads the full diff — not just the latest commit — writes a human-readable title and summary, pushes, and creates via `gh`.
 
-### `/bb:investigate`
+### `/bb:diagnose`
 
 For bugs that cross service boundaries. Dispatches parallel Explore agents across all affected packages and services simultaneously, synthesises findings, and proposes a fix with evidence — but doesn't implement until you approve.
 
@@ -87,7 +87,7 @@ Works with any project structure: monorepos, multi-repo setups, or single repos 
 
 **Move fast within guardrails.** Autonomy means speed, not recklessness. Project standards always apply.
 
-**Surface everything, then let the user decide.** Preflight and investigate show the full picture before acting.
+**Surface everything, then let the user decide.** Check and diagnose show the full picture before acting.
 
 **Logical grouping over mechanical grouping.** Commits are organised by intent, not by file type.
 

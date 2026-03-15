@@ -19,7 +19,7 @@ Move fast. Commit clean. Diagnose properly.
 ## Install
 
 ```
-/install-plugin brandonrbridges/claude-skills
+/plugin marketplace add brandonrbridges/claude-skills
 ```
 
 All commands are prefixed with `bb:`. Run `/bb:help` for a quick reference.

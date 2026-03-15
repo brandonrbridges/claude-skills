@@ -1,0 +1,21 @@
+{
+  "name": "brandonrbridges-claude-skills",
+  "owner": {
+    "name": "Brandon Bridges",
+    "email": "brandon@brandonbridges.com"
+  },
+  "metadata": {
+    "description": "Developer workflow skills for Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "bb",
+      "source": ".",
+      "description": "Developer workflow skills — autonomous mode, smart commits, preflight checks, PRs, and cross-codebase investigation",
+      "version": "1.3.0",
+      "author": {
+        "name": "Brandon Bridges"
+      }
+    }
+  ]
+}

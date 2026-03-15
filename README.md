@@ -9,7 +9,7 @@
 Move fast. Commit clean. Diagnose properly.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
-[![Plugin Version](https://img.shields.io/badge/version-1.2.0-green.svg?style=flat-square)](.claude-plugin/plugin.json)
+[![Plugin Version](https://img.shields.io/badge/version-1.3.0-green.svg?style=flat-square)](.claude-plugin/plugin.json)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-plugin-8B5CF6.svg?style=flat-square)](https://github.com/anthropics/claude-code)
 
 </div>
@@ -37,6 +37,8 @@ All commands are prefixed with `bb:`. Run `/bb:help` for a quick reference.
 | [`/bb:pr`](#bbpr) | Create a pull request from branch commits |
 | [`/bb:diagnose`](#bbdiagnose) | Cross-codebase bug diagnosis with parallel agents |
 | [`/bb:shad`](#bbshad) | shadcn/ui best practices — Tailwind v4, OKLCH, composition |
+| [`/bb:anchor`](#bbanchor) | Checkpoint state to survive context compression |
+| [`/bb:dispatch`](#bbdispatch) | Orchestrate parallel agent teams for complex tasks |
 
 ---
 
@@ -85,6 +87,16 @@ Works with any project structure: monorepos, multi-repo setups, or single repos 
 Enforces shadcn/ui best practices when building UI. Tailwind v4 with `@theme inline` (no `tailwind.config.ts`), OKLCH color format, semantic CSS variables with foreground pairs, `data-slot` attributes, React 19 patterns (no `forwardRef`), and proper composition using Radix primitives.
 
 Covers theming, forms (react-hook-form + Zod), responsive dialog/drawer patterns, skeleton loading states, and the common mistakes table that catches the v3-to-v4 pitfalls.
+
+### `/bb:anchor`
+
+Checkpoints your current state — what was asked, what's done, what's left, which files were touched — into a task that survives context compression. In long sessions, earlier messages get compressed and the agent loses track of scope, progress, and decisions. Anchors fix that.
+
+Also acts as a scope guard: before doing anything new, re-read the anchor and check if it's within scope.
+
+### `/bb:dispatch`
+
+Orchestrates a structured team of parallel agents for complex, multi-part tasks. Runs in phases: scouts explore the codebase in parallel, you synthesise their findings into a plan, implementers execute independent pieces in worktrees, a reviewer checks quality, and a validator runs the build. Each agent gets only the context it needs — no bloated prompts, no overlapping work.
 
 ---
 

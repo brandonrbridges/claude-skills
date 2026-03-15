@@ -14,6 +14,8 @@ description: Use when the user invokes /help or asks what bb commands are availa
 | `/bb:pr` | Create a pull request from branch commits |
 | `/bb:diagnose` | Cross-codebase bug diagnosis with parallel agents |
 | `/bb:shad` | shadcn/ui best practices — Tailwind v4, OKLCH, composition |
+| `/bb:anchor` | Checkpoint your state to survive context compression |
+| `/bb:dispatch` | Orchestrate parallel agent teams for complex tasks |
 | `/bb:help` | This list |
 
 Repo: https://github.com/brandonrbridges/claude-skills

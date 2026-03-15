@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0] - 2026-03-15
+
+### Added
+- `/bb:anchor` — Context checkpointing to survive compression and prevent scope drift
+- `/bb:dispatch` — Parallel agent team orchestration: scouts, implementers, reviewer, validator
+
 ## [1.2.0] - 2026-03-15
 
 ### Added

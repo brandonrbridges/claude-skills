@@ -20,6 +20,7 @@ Move fast. Commit clean. Diagnose properly.
 
 ```
 /plugin marketplace add brandonrbridges/claude-skills
+/plugin install bb
 ```
 
 All commands are prefixed with `bb:`. Run `/bb:help` for a quick reference.

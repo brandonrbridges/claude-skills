@@ -1,11 +1,12 @@
 {
   "name": "bb",
-  "description": "Brandon's Claude Code skills: autonomous mode, smart commits, and cross-codebase investigation",
+  "description": "Developer workflow skills for Claude Code — autonomous mode, smart commits, preflight checks, PRs, and cross-codebase investigation",
   "version": "1.0.0",
   "author": {
-    "name": "Brandon Bridges"
+    "name": "Brandon Bridges",
+    "url": "https://github.com/brandonrbridges"
   },
   "repository": "https://github.com/brandonrbridges/claude-skills",
   "license": "MIT",
-  "keywords": ["skills", "auto", "commit", "investigate", "debugging"]
+  "keywords": ["skills", "workflow", "git", "commit", "pr", "lint", "type-check", "debugging", "autonomous", "preflight", "investigation"]
 }

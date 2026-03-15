@@ -10,6 +10,8 @@ A Claude Code plugin for developers who want their agent to move fast, commit cl
 
 All commands are prefixed with `bb:` — e.g. `/bb:commit`, `/bb:auto`.
 
+Run `/bb:help` to see all available commands.
+
 ## Skills
 
 ### `/bb:auto` — Autonomous mode
@@ -48,6 +50,10 @@ For bugs that cross service boundaries. Dispatches parallel Explore agents acros
 
 Works with any project structure: monorepos, multi-repo setups, or single repos with multiple layers.
 
+### `/bb:help` — List commands
+
+Quick reference of all available `bb:` commands. Handy when you forget what's available.
+
 ## Philosophy
 
 These skills share a few opinions:
@@ -56,6 +62,14 @@ These skills share a few opinions:
 - **Move fast within guardrails.** Autonomy means speed, not recklessness. Project standards always apply.
 - **Surface everything, then let the user decide.** Preflight and investigate show the full picture before acting.
 - **Logical grouping over mechanical grouping.** Commits are organised by intent, not by file type.
+
+## Contributing
+
+If you've got a skill that fits the philosophy — opinionated workflow discipline, no AI fingerprints, surface-then-decide — PRs are welcome.
+
+## Versioning
+
+This plugin follows semver. When updating skills, bump the version in `.claude-plugin/plugin.json` and add an entry to `CHANGELOG.md`. Users get updates by reinstalling or when Claude Code checks for plugin updates.
 
 ## License
 

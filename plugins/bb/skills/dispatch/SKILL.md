@@ -13,7 +13,7 @@ Orchestrate a team of parallel agents to break down and execute complex tasks. E
 |:-----|:-----------|:--------|
 | **Scout** | `Explore` | Gather context — find relevant files, patterns, conventions, dependencies |
 | **Implementer** | `general-purpose` | Execute a specific, independent piece of work |
-| **Reviewer** | `superpowers:code-reviewer` | Review completed work against the plan and standards |
+| **Reviewer** | `general-purpose` (fresh context) | Review completed work against the plan and standards |
 | **Validator** | `general-purpose` | Run type-check, lint, build — report pass/fail |
 
 ## Workflow
@@ -84,7 +84,7 @@ Report: what you changed, file paths, any issues encountered.
 After implementers return, dispatch the **reviewer**:
 
 ```
-Agent(subagent_type="superpowers:code-reviewer")
+Agent(subagent_type="general-purpose")  # fresh context, give it the diff and the plan, not your conclusions
 ```
 
 The reviewer checks:
